@@ -16,7 +16,7 @@ jobs:
 
       - run: npm install
 
-      - run: parcel build src/index.html --out-dir dist
+      - run: npm run build-for-deploy
 
       - name: Deploy with gh-pages
         run: |
